@@ -128,4 +128,7 @@ h1{
     .p-wid{
         width: 80%;
     }
+    .p-question:hover{
+        color: hsl(292, 42%, 14%);
+    }
 }
