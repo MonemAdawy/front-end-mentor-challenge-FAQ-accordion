@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+}
+
+body{
+    background-image: url("../images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    background-attachment: fixed;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 30px 100px -50px rgba(166, 9, 194, 0.05);
+}
+
+.topic{
+    position: relative;
+}
+
+.star{
+    position: absolute;
+    width: 35px;
+    left: 0;
+    top: 20%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 50px;
+    color: hsl(292, 42%, 14%);
+}
+
+.p-question{
+    padding: 30px 0;
+    cursor: pointer;
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+    font-size: large;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.p-question:hover{
+    color: #AD28EB;
+}
+
+.p-wid{
+    width: 80%;
+}
+
+#plus{
+    position: absolute;
+    right: 0;
+    top: 33%;
+    width: 28px;
+}
+
+#minus{
+    position: absolute;
+    right: 0;
+    top: 33%;
+    width: 28px;
+    display: none;
+}
+
+#p-answer{
+    display: none;
+    color: hsl(292, 16%, 49%);
+    margin-bottom: 30px;
+    transition: all 1s;
+    line-height: 25px;
+}
+
+.line{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0.5px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:1065px){
+    .container{
+        width: 70%;
+    }
+}
+
+
+@media (max-width:605px) {
+    body{
+        background-image: url("../images/background-pattern-mobile.svg");
+    }
+    main{
+        padding: 50px 0;
+    }
+    .container{
+        width: 85%;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .star{
+        position: absolute;
+        width: 28px;
+        left: 0;
+        top: 20%;
+    }
+    .p-wid{
+        width: 80%;
+    }
+}
