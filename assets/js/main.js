@@ -3,13 +3,13 @@ var answers=document.querySelectorAll("#p-answer");
 var plus=document.querySelectorAll("#plus");
 var minus=document.querySelectorAll("#minus");
 
+answers[0].style.display="flex";
+minus[0].style.display="flex";
+questions[0].style.color="#AD28EB";
+
 for(let i=0;i<questions.length && i< answers.length;i++)
 {
     questions[i].addEventListener("click",function(e){
-
-
-
-
         if(answers[i].style.display=="flex")
         {
             answers[i].style.display="none";
